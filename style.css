@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --COLOR--UM: #ddcfb9;
+    --COLOR--DOIS: #123564;
+    --COLOR--TRES: #ff3131;
+    --FONT--UM: "Roboto", sans-serif;
+    --FONT--DOIS: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--COLOR--DOIS);
+    font-family: var(--FONT--UM);
+}
+
+/* Logo */
+.logo {
+    background: var(--COLOR--UM);
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* Formulário Responsivo */
+.notafinal {
+    background-color: var(--COLOR--UM);
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: var(--FONT--DOIS);
+    color: var(--COLOR--TRES);
+    margin-bottom: 1em;
+}
+
+.campos {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.campos label {
+    display: block;
+    font-weight: 600;
+    color: var(--COLOR--DOIS);
+    margin-bottom: 0.5em;
+}
+
+.campos input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 2px solid var(--COLOR--UM);
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Botão */
+.res {
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--COLOR--DOIS);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.res:hover {
+    background-color: #0e2a4b;
+}
+
+/* Resultado */
+#resultado {
+    background-color: var(--COLOR--DOIS);
+    color: white;
+    margin-top: 2em;
+    padding: 1.5em;
+    border-radius: 10px;
+    font-family: var(--FONT--DOIS);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .res {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .campos input {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
